@@ -9325,6 +9325,14 @@ img.mfp-img {
 }
 
 @media all and (max-width: 900px) {
+    .interests {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /*gap: 5px;*/
+        /*max-width: 900px; !* Adjust the width as needed *!*/
+        /*margin: auto;*/
+    }
+
     .mfp-arrow {
         -webkit-transform:scale(0.75);
         transform: scale(0.75)
@@ -9376,4 +9384,13 @@ img.mfp-img {
     .masthead,.toc,.page__share,.page__related,.ads,.page__footer {
         display: none
     }
+}
+
+.interests {
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /*max-width: 900px; !* Adjust the width as needed *!*/
+    /*margin: auto;*/
 }
