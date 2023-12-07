@@ -9390,7 +9390,7 @@ img.mfp-img {
     min-width: 900px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 22px;
     /*max-width: 900px; !* Adjust the width as needed *!*/
     /*margin: auto;*/
 }
