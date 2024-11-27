@@ -54,7 +54,7 @@ main {
   flex-direction: column;
   position: relative;
   width: 100%;
-  background-color: white;
+  background-color: var(--color-background);
 }
 
 
