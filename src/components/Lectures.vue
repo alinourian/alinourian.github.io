@@ -44,7 +44,7 @@ import Card from "@/components/Card.vue";
             affiliation="Sharif University of Technology"
             :dates="['Spring 2021', 'Spring 2022']"
             description="Java Tutorial Classes of Advanced Programming Course for Object Oriented Programming"
-            page="Java"
+            page="/lectures/Java"
         />
       </div>
     </div>

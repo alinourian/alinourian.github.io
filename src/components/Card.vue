@@ -25,7 +25,7 @@ const props = defineProps({
   page: {
     type: String,
     required: false,
-    default: '404'
+    default: null,
   }
 });
 </script>
@@ -46,11 +46,10 @@ export default {
     togglePopup() {
       this.showPopup = !this.showPopup;
     },
-    goToCardPage() {
-      if (this.page === '404') {
+    goToCardPage(event) {
+      if (!this.page) {
+        event.preventDefault();
         this.showPopup = true;
-      } else {
-        this.$router.push({name: this.page});
       }
     }
   },
@@ -59,7 +58,7 @@ export default {
 
 <template>
   <Popup v-if="showPopup" @close="togglePopup()" />
-  <div class="lecture" @click="goToCardPage()">
+  <a class="lecture" :href="props.page || '#'" @click="goToCardPage">
     <div class="img-container">
       <img :src="props.poster" alt="poster">
       <div class="lecture-date">
@@ -79,7 +78,7 @@ export default {
         <p>See more</p>
       </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <style scoped>
@@ -130,6 +129,7 @@ export default {
   justify-content: space-between;
   position: relative;
   height: 230px;
+  color: var(--color-text);
 }
 
 .card-body .place {
@@ -151,12 +151,13 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
+  color: #f2f2f2;
 }
 
 .date-tag {
   border: 1px solid #ff9600;
   border-radius: 8px;
-  padding: 1%;
+  padding: 1% 2%;
   width: fit-content;
   background-color: #FFA500FF;
   white-space: nowrap;

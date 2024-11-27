@@ -66,16 +66,16 @@ export default {
       </a>
     </div>
     <div class="main-side">
-      <a class="navbar-item" @click="scrollToSection('home')">
+      <a class="navbar-item" @click="scrollToSection('home')" style="cursor: pointer;">
         <h6>Home</h6>
       </a>
-      <a class="navbar-item" @click="scrollToSection('lectures')">
+      <a class="navbar-item" @click="scrollToSection('lectures')" style="cursor: pointer;">
         <h6>Lectures</h6>
       </a>
 <!--      <a class="navbar-item" @click="scrollToSection('projects')">-->
 <!--        <h6>Projects</h6>-->
 <!--      </a>-->
-      <a class="navbar-item" href="/CV">
+      <a href="/CV" class="navbar-item">
         <h6>CV</h6>
       </a>
     </div>
@@ -168,7 +168,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   margin-right: 15%;
 }
 

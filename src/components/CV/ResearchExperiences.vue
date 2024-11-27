@@ -11,7 +11,7 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at <a class="institute-hyperlink" href="https://www.eurecom.fr/en">Eurecom</a></h4>
+            <h4>Research Intern at <a class="institute-hyperlink" href="https://www.eurecom.fr/en" target="_blank">Eurecom</a></h4>
             <em>Research institution in Biot, France</em>
           </div>
           <div class="date">
@@ -29,7 +29,7 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at Institute for Convergence Science & Technology <a class="institute-hyperlink" href="https://icst.sharif.edu/en/">(ICST)</a></h4>
+            <h4>Research Intern at Institute for Convergence Science & Technology <a class="institute-hyperlink" href="https://icst.sharif.edu/en/" target="_blank">(ICST)</a></h4>
             <em>Sharif University of Technology</em>
           </div>
           <div class="date">
@@ -130,6 +130,10 @@
 .institute-hyperlink {
   text-decoration: none;
   color: rgb(21, 96, 189);
+}
+
+.institute-hyperlink:hover {
+  color: #0271E8;
 }
 
 li {

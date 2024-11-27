@@ -53,10 +53,10 @@ export default {
             <a href="mailto:alinourian10@gmail.com"><font-awesome-icon :icon="faEnvelope()" /> Gmail</a>
           </div>
           <div class="item pointer">
-            <a href="https://github.com/alinourian"><font-awesome-icon :icon="faGithub()" /> GitHub</a>
+            <a href="https://github.com/alinourian" target="_blank"><font-awesome-icon :icon="faGithub()" /> GitHub</a>
           </div>
           <div class="item pointer">
-            <a href="https://www.linkedin.com/in/ali-nourian-559078227"><font-awesome-icon :icon="faLinkedin()" /> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ali-nourian-559078227" target="_blank"><font-awesome-icon :icon="faLinkedin()" /> LinkedIn</a>
           </div>
         </div>
       </div>
@@ -142,12 +142,17 @@ export default {
   font-size: 1.1rem;
 }
 
+.left-sidebar .items .item a:hover {
+  color: var(--color-accent);
+}
+
 .pointer {
   cursor: pointer;
 }
 
 .pointer:hover {
   text-decoration: underline;
+  color: var(--color-accent);
 }
 
 @media screen and (max-width: 768px) {

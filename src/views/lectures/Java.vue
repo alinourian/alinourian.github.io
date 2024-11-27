@@ -176,6 +176,7 @@ const recordedVideos = [
   align-items: center;
   display: flex;
   gap: 5px;
+  color: var(--color-accent);
 }
 
 .videos {

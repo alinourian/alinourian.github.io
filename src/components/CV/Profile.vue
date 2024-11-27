@@ -74,7 +74,12 @@ export default {
 }
 
 .hyperlink {
+  color: var(--color-accent);
   cursor: pointer;
+}
+
+.hyperlink:hover {
+  color: #0271E8;
 }
 
 @media screen and (max-width: 500px) {

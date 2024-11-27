@@ -22,9 +22,9 @@
 
   --font-heading: 'Merriweather', serif;
   --font-body: 'Lato', sans-serif;
-  --color-text: #333333;
+  --color-text: #2E2E2E;
   --color-background: #ffffff;
-  --color-accent: rgb(21, 96, 189);; /* Adjust for your theme */
+  --color-accent: rgb(21, 96, 189); /* Adjust for your theme */
   --line-height-body: 1.5;
   --line-height-heading: 1.3;
   --max-width-content: 800px;
@@ -107,6 +107,10 @@ body {
   padding: 0;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), serif;
@@ -154,18 +158,11 @@ p {
   line-height: var(--line-height-body);
 }
 
-/* Links */
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
 /* Footer */
 footer {
   font-size: 0.875rem;
   text-align: center;
   color: #888888;
-  margin-top: 2em;
   padding: 1em 0;
   border-top: 1px solid #eeeeee;
 }
