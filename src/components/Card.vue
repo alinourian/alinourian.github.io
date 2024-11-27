@@ -48,8 +48,9 @@ export default {
     },
     goToCardPage(event) {
       if (!this.page) {
-        event.preventDefault();
         this.showPopup = true;
+      } else {
+        this.$router.push({name: this.page});
       }
     }
   },
@@ -58,7 +59,7 @@ export default {
 
 <template>
   <Popup v-if="showPopup" @close="togglePopup()" />
-  <a class="lecture" :href="props.page || '#'" @click="goToCardPage">
+  <a class="lecture" @click="goToCardPage()">
     <div class="img-container">
       <img :src="props.poster" alt="poster">
       <div class="lecture-date">

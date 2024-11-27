@@ -1,11 +1,11 @@
 <script setup>
 import ALogo from "../assets/ALogo.svg";
 
-const scrollToSection = (sectionId) => {
+const scrollToSection = (sectionId, offset = 75) => {
   const section = document.getElementById(sectionId);
 
   if (section) {
-    const offset = 75;
+    console.log("if section");
     const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = sectionPosition - offset;
 
@@ -20,12 +20,24 @@ const scrollToSection = (sectionId) => {
     if (currentPath !== "/") {
       // Navigate to the main page and search for the section after loading
       window.location.href = `/#${sectionId}`;
+
+      // // Ensure scrolling works on page load
+      // window.onload = () => {
+      //   sectionId = window.location.hash.substring(1);
+      //   const section = document.getElementById(sectionId);
+      //   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+      //   const offsetPosition = sectionPosition - offset;
+      //   console.log(offsetPosition)
+      //   window.scrollTo({
+      //     top: offsetPosition,
+      //     behavior: "smooth",
+      //   });
+      // }
     } else {
       // If already on the main page, ensure the section is searched after hash update
       setTimeout(() => {
         const sectionAfterRedirect = document.getElementById(sectionId);
         if (sectionAfterRedirect) {
-          const offset = 75;
           const sectionPosition =
               sectionAfterRedirect.getBoundingClientRect().top + window.scrollY;
           const offsetPosition = sectionPosition - offset;
@@ -75,9 +87,9 @@ export default {
 <!--      <a class="navbar-item" @click="scrollToSection('projects')">-->
 <!--        <h6>Projects</h6>-->
 <!--      </a>-->
-      <a href="/CV" class="navbar-item">
+      <router-link to="/CV" class="navbar-item">
         <h6>CV</h6>
-      </a>
+      </router-link>
     </div>
     <div class="left-side">
       <a href="mailto:alinourian10@gmail.com">
@@ -92,10 +104,10 @@ export default {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
       </div>
       <ul>
-        <li><a @click="scrollToSection('home'); toggleMenu();"><h6>Home</h6></a></li>
+        <li><a @click="scrollToSection('home', 300); toggleMenu();"><h6>Home</h6></a></li>
         <li><a @click="scrollToSection('lectures'); toggleMenu();"><h6>Lectures</h6></a></li>
 <!--        <li><a @click="scrollToSection('projects'); toggleMenu();"><h6>Projects</h6></a></li>-->
-        <li><a href="/CV" @click="toggleMenu"><h6>CV</h6></a></li>
+        <li><router-link to="/CV" @click="toggleMenu"><h6>CV</h6></router-link></li>
         <li><a href="mailto:alinourian10@gmail.com"><h6 class="contact-me">Email Me!</h6></a></li>
       </ul>
     </div>
