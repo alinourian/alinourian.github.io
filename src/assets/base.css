@@ -22,7 +22,7 @@
 
   --font-heading: 'Merriweather', serif;
   --font-body: 'Lato', sans-serif;
-  --color-text: #2E2E2E;
+  --color-text: black;
   --color-background: #ffffff;
   --color-accent: rgb(21, 96, 189); /* Adjust for your theme */
   --line-height-body: 1.5;
@@ -79,6 +79,8 @@ html, body, #__layout {
 
 body {
   min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-background);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -100,8 +102,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--color-text);
-  background-color: var(--color-background);
   line-height: var(--line-height-body);
   margin: 0;
   padding: 0;
