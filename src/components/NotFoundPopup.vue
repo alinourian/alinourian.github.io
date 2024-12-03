@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* Popup Overlay */
 .popup-overlay {
   position: fixed;

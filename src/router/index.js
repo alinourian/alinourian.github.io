@@ -9,6 +9,8 @@ import Python from "@/views/lectures/Python.vue";
 import LLMsLiteratureReview from "@/views/lectures/LLMsLiteratureReview.vue";
 import Mistral7B from "@/views/lectures/Mistral7B.vue";
 import MachineLearning from "@/views/lectures/MachineLearning.vue";
+import LLMs5GICMLCN from "@/views/publications/LLMs5GICMLCN.vue"
+import Publications from "@/components/CV/Publications.vue";
 
 const routes = [
     {
@@ -30,6 +32,13 @@ const routes = [
             {path: 'LLMsLiteratureReview', name: 'LLMsLiteratureReview', component: LLMsLiteratureReview},
         ],
     },
+    {
+        path: '/publications',
+        component: ProjectLayout,
+        children: [
+            {path: 'llms-for-5g-icmlcn', name: 'llms-for-5g-icmlcn', component: LLMs5GICMLCN},
+        ]
+    }
 ];
 
 const router = createRouter({
