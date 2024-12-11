@@ -12,7 +12,7 @@
         <ul class="items w-45">
           <li>Machine Learning</li>
           <li>Image Processing & Computer Vision</li>
-          <li>Language Processing</li>
+          <li>Large Language Models</li>
         </ul>
         <ul class="items w-55">
           <li>Signal Processing</li>

@@ -28,7 +28,7 @@ const routes = [
             {path: 'Java', name: 'Java', component: Java},
             {path: 'MATLAB', name: 'MATLAB', component: MATLAB},
             {path: 'MachineLearning', name: 'MachineLearning', component: MachineLearning},
-            {path: 'Mistral-7B', name: 'Mistral7B', component: Mistral7B},
+            {path: 'Mistral7B', name: 'Mistral7B', component: Mistral7B},
             {path: 'LLMsLiteratureReview', name: 'LLMsLiteratureReview', component: LLMsLiteratureReview},
         ],
     },

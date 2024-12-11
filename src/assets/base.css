@@ -41,7 +41,7 @@
   --section-gap: 160px;
 }
 
-html, body, #__layout {
+html, body {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -86,6 +86,11 @@ body {
   line-height: var(--line-height-body);
   margin: 0;
   padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Links */

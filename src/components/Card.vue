@@ -48,7 +48,7 @@ export default {
     },
     goToCardPage(event) {
       if (!this.page) {
-        this.showPopup = true;
+        // this.showPopup = true;
       } else {
         this.$router.push({name: this.page});
       }
@@ -76,7 +76,8 @@ export default {
       </div>
       <p v-if="props.description !== '404'" class="lecture-description text-container line-clamp-3">{{ props.description }}</p>
       <div class="read-more">
-        <p>See more</p>
+        <svg v-if="props.page" style="width: 10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#16d028" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+        <p v-if="props.page">See more</p>
       </div>
     </div>
   </a>
@@ -168,6 +169,9 @@ export default {
 .read-more {
   color: cadetblue;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .read-more:hover {

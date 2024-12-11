@@ -1,10 +1,10 @@
-<script setup>
+<template>
+
+</template>
+
+<script>
 
 </script>
-
-<template>
-Hiii Mistral 7B
-</template>
 
 <style scoped>
 

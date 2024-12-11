@@ -15,35 +15,36 @@ import Card from "@/components/Card.vue";
             title="Mistral-7B: Fine-tuning"
             affiliation="ICST @ Sharif University of Technology"
             :dates="['Fall 2023']"
-            description="Fine tuning Mistral-7b with PEFT and LoRAon Puffin Dataset (multi-turn conversations between GPT-4 and real humans)"
+            description="Fine tuning Mistral-7b with PEFT and LoRAon Puffin Dataset (multi-turn conversations between GPT-4 and real humans)."
         />
         <Card
             poster="/images/LLMs-poster.png"
             title="Large Language Models: A Comprehensive Literature Review"
             affiliation="ICST @ Sharif University of Technology"
             :dates="['Summer 2023']"
-            description="A Comprehensive Overview on the emergence of large language models - from 'Attention is All You Need' to GPT-4"
+            description="A Comprehensive Overview on the emergence of large language models - from 'Attention is All You Need' to GPT-4."
+            page="LLMsLiteratureReview"
         />
         <Card
             poster="/images/ML-poster.png"
             title="Machine Learning Course"
             affiliation="Sharif University of Technology"
             :dates="['Summer 2022', 'Summer 2023']"
-            description="Eight-session course in both theoretical and practical Machine Learning"
+            description="Eight-session course in both theoretical and practical Machine Learning."
         />
         <Card
             poster="/images/MATLAB-poster.png"
             title="MATLAB Course"
             affiliation="Sharif University of Technology"
             :dates="['Summer 2021']"
-            description="Twelve-session course in MATLAB and its usage in Electrical Engineering and AI"
+            description="Twelve-session course in MATLAB and its usage in Electrical Engineering and AI."
         />
         <Card
             poster="/images/Java-poster2.png"
             title="Java Course"
             affiliation="Sharif University of Technology"
             :dates="['Spring 2021', 'Spring 2022']"
-            description="Java Tutorial Classes of Advanced Programming Course for Object Oriented Programming"
+            description="Java Tutorial Classes of Advanced Programming Course for Object Oriented Programming."
             page="Java"
         />
       </div>
