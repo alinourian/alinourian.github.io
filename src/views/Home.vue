@@ -5,7 +5,7 @@ import {faBuildingColumns} from "@fortawesome/free-solid-svg-icons/faBuildingCol
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import AboutMe from "@/components/AboutMe.vue";
-import Interests from "@/components/Interests.vue";
+import Interests from "@/components/CV/Interests.vue";
 import ResearchExperiences from "@/components/CV/ResearchExperiences.vue";
 import Publications from "@/components/CV/Publications.vue";
 import WorkExperiences from "@/components/WorkExperiences.vue";

@@ -11,13 +11,13 @@
       <div class="interest">
       <ul class="items w-45">
         <li>Machine Learning</li>
-        <li>Image Processing & Computer Vision</li>
         <li>Large Language Models</li>
+        <li>Optimization</li>
       </ul>
       <ul class="items w-55">
-        <li>Signal Processing</li>
-        <li>Robustness & AI Fairness and Interpretability</li>
-        <li>Biomedical Signal Processing & AI for Healthcare</li>
+        <li>Computer Vision</li>
+        <li>Trustworthy AI</li>
+        <li>AI for Healthcare</li>
       </ul>
       </div>
     </div>

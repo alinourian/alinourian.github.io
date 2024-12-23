@@ -20,9 +20,9 @@
         </div>
         <ul class="descriptions">
           <li class="description">
-            Implemented an adaptive, LLM-powered system for 5G network automation, utilizing text classification,
-            generation, retrieval systems and feedback loops to dynamically refine network commands, enhancing accessibility
-            and resilience in 5G configuration.
+            Developed an LLM-powered system for network automation, integrating Retrieval Systems,
+            and self-refining feedback loops. The system emphasizes Privacy and Reliability,
+            enhancing accessibility while ensuring secure and resilient network configuration.
           </li>
         </ul>
       </div>
@@ -38,16 +38,14 @@
         </div>
         <ul class="descriptions">
           <li class="description">
-            Developed a voice assistant using ASR and TTS models, with semantic and emotion recognition capabilities
-            tailored for elderly medical support.
+            Developed a voice assistant robot using ASR and TTS models combined with Contrastive Learning, with semantic and emotion recognition capabilities tailored for elderly medical support.
           </li>
           <li class="description">
-            Conducted analysis of social media and news data using Large Language Models (LLMs) to investigate
-            their impact on stock market trends.
+            Developed an AI framework for trustworthy social media analysis, leveraging Causal Inference and Bias Mitigation techniques to ensure accurate, fair, and reliable insights.
+            The system integrates LLMs for semantic understanding, enhancing the detection of misinformation, Sentiment Analysis, and Trend Forecasting.
           </li>
           <li class="description">
-            Explored edge computing and 3D vision to enhance real-time data processing and visualization, optimizing
-            latency and efficiency for 3D rendering and virtual interactions in the metaverse.
+            Explored edge computing and 3D vision to enhance real-time data processing and visualization, optimizing latency and efficiency for 3D rendering and virtual interactions in the metaverse.
           </li>
         </ul>
       </div>
@@ -63,8 +61,8 @@
         </div>
         <ul class="descriptions">
           <li class="description">
-            Developed adaptive filters and a noise-robust feature extraction framework to enhance the resilience of
-            audio and image classification models.
+            Developed an Attention-based pipeline for generating adaptive filters and a Noise-Robust Feature Extraction framework,
+            prioritizing Robustness to enhance the accuracy of Audio and Image Classification models.
           </li>
         </ul>
       </div>
@@ -80,8 +78,7 @@
         </div>
         <ul class="descriptions">
           <li class="description">
-            Applied AI techniques to healthcare, specializing in medical signal and image processing of fMRI and CT
-            data.
+            Applied AI techniques to healthcare, specializing in Medical Image Processing of fMRI and CT data.
           </li>
           <li class="description">
             Extracted EEG biomarkers for classifying patients with Alzheimer’s Disease (AD), Mild Cognitive Impairment
