@@ -21,6 +21,7 @@ export default {
     return {
       showPopup: false,
       imagePaths: [
+        '/images/icmlcn/LLMRAG.png',
         '/images/icmlcn/icmlcn1.jpg',
         '/images/icmlcn/icmlcn2.jpg',
         '/images/icmlcn/icmlcn3.jpg',

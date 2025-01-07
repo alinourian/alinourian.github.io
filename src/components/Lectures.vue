@@ -16,6 +16,7 @@ import Card from "@/components/Card.vue";
             affiliation="ICST @ Sharif University of Technology"
             :dates="['Fall 2023']"
             description="Fine tuning Mistral-7b with PEFT and LoRAon Puffin Dataset (multi-turn conversations between GPT-4 and real humans)."
+            page="Mistral7B"
         />
         <Card
             poster="/images/LLMs-poster.png"
