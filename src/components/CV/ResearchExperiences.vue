@@ -11,8 +11,8 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at <a class="institute-hyperlink" href="https://www.eurecom.fr/en" target="_blank">Eurecom</a></h4>
-            <em>Research institution in Biot, France</em>
+            <h4 class="research-title">Research Intern at <a class="institute-hyperlink" href="https://www.eurecom.fr/en" target="_blank">Eurecom</a></h4>
+            <em>Research institution in Biot, France</em> <em> Supervisor: Prof. Navid Nikaein and Prof. Babak Khalaj</em>
           </div>
           <div class="date">
             Mar. 2023 - May 2024
@@ -29,8 +29,9 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at Institute for Convergence Science & Technology <a class="institute-hyperlink" href="https://icst.sharif.edu/en/" target="_blank">(ICST)</a></h4>
+            <h4 class="research-title">Research Intern at Institute for Convergence Science & Technology <a class="institute-hyperlink" href="https://icst.sharif.edu/en/" target="_blank">(ICST)</a></h4>
             <em>Sharif University of Technology</em>
+            <em> Supervisor: Prof. Babak Khalaj</em>
           </div>
           <div class="date">
             May 2023 - present
@@ -41,8 +42,7 @@
             Developed a voice assistant robot using ASR and TTS models combined with Contrastive Learning, with semantic and emotion recognition capabilities tailored for elderly medical support.
           </li>
           <li class="description">
-            Developed an AI framework for trustworthy social media analysis, leveraging Causal Inference and Bias Mitigation techniques to ensure accurate, fair, and reliable insights.
-            The system integrates LLMs for semantic understanding, enhancing the detection of misinformation, Sentiment Analysis, and Trend Forecasting.
+            Developed an AI framework for trustworthy social media analysis, leveraging Causal Inference and Bias Mitigation techniques to ensure accurate, fair, and reliable insights. The system integrates Large Language and Vision Models for semantic understanding, enhancing the detection of misinformation, Sentiment Analysis, and Trend Forecasting.
           </li>
           <li class="description">
             Explored edge computing and 3D vision to enhance real-time data processing and visualization, optimizing latency and efficiency for 3D rendering and virtual interactions in the metaverse.
@@ -52,8 +52,9 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at Machine Learning Lab</h4>
-            <em>Research institution in Biot, France</em>
+            <h4 class="research-title">Research Intern at Machine Learning Lab</h4>
+            <em>Sharif University of Technology</em>
+            <em> Supervisor: Prof. Sajjad Amini</em>
           </div>
           <div class="date">
             Nov. 2022 - present
@@ -69,8 +70,9 @@
       <div class="experience">
         <div class="name-date">
           <div class="name">
-            <h4>Research Intern at Augmented Intelligence Research Laboratory (AIRLab)</h4>
+            <h4 class="research-title">Research Intern at Augmented Intelligence Research Laboratory (AIRLab)</h4>
             <em>Sharif University of Technology</em>
+            <em> Supervisor: Prof. Hamid Karbalei Aghajan</em>
           </div>
           <div class="date">
             June 2021 - Aug. 2022
@@ -91,6 +93,11 @@
 </template>
 
 <style scoped>
+.research-title {
+  width: 100%;
+  margin-bottom: 0;
+}
+
 .experience {
   display: flex;
   flex-direction: column;

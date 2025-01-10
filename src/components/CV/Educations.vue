@@ -18,7 +18,7 @@
           </div>
         </div>
         <p class="education-description">
-          B.Sc. in Electrical Engineering, Minor in Applied Mathematics,
+          B.Sc. in Electrical Engineering, (Minor in Applied Mathematics)
         </p>
 <!--        <div class="education-gpa">-->
 <!--          GPA: 17.7/20.0 (≡ 3.7/4)-->

@@ -10,6 +10,7 @@ import WorkExperiences from "@/components/CV/WorkExperiences.vue";
 import Achievements from "@/components/CV/Achievements.vue";
 import Skills from "@/components/CV/Skills.vue";
 import Courses from "@/components/CV/Courses.vue";
+import SelectedProjects from "@/components/CV/SelectedProjects.vue";
 </script>
 
 <template>
@@ -23,11 +24,12 @@ import Courses from "@/components/CV/Courses.vue";
       <Interests/>
       <Publications/>
       <ResearchExperiences/>
+<!--      <Courses/>-->
       <TeachingExperiences/>
-      <WorkExperiences/>
       <Achievements/>
       <Skills/>
-<!--      <Courses/>-->
+      <SelectedProjects/>
+      <WorkExperiences/>
     </div>
     <div class="right-sidebar">
 

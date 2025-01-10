@@ -11,7 +11,7 @@ import Publications from "@/components/CV/Publications.vue";
 import WorkExperiences from "@/components/WorkExperiences.vue";
 import Lectures from "@/components/Lectures.vue";
 import Projects from "@/components/Projects.vue";
-import Educations from "@/components/Educations.vue";
+import Educations from "@/components/CV/Educations.vue";
 
 export default {
   name: "Home",
@@ -68,7 +68,7 @@ export default {
       <Educations/>
       <Publications/>
       <Lectures id="lectures"/>
-<!--      <Projects id="projects"/>-->
+      <Projects id="projects"/>
     </div>
     <div class="right-sidebar">
     </div>
