@@ -12,6 +12,7 @@ import WorkExperiences from "@/components/WorkExperiences.vue";
 import Lectures from "@/components/Lectures.vue";
 import Projects from "@/components/Projects.vue";
 import Educations from "@/components/CV/Educations.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
@@ -30,6 +31,7 @@ export default {
     }
   },
   components: {
+    Contact,
     Educations,
     Projects,
     Lectures, WorkExperiences, Publications, ResearchExperiences, Interests, AboutMe, FontAwesomeIcon },
@@ -59,6 +61,9 @@ export default {
             <a href="https://www.linkedin.com/in/ali-nourian-559078227" target="_blank"><font-awesome-icon :icon="faLinkedin()" /> LinkedIn</a>
           </div>
         </div>
+<!--        <div>-->
+<!--          <em>last update: Sep 2024</em>-->
+<!--        </div>-->
       </div>
     </div>
     <div class="main-container">
@@ -69,6 +74,7 @@ export default {
       <Publications/>
       <Lectures id="lectures"/>
       <Projects id="projects"/>
+      <Contact id="contact"/>
     </div>
     <div class="right-sidebar">
     </div>

@@ -11,7 +11,7 @@
       <div class="interest">
       <ul class="items w-45">
         <li>Machine Learning</li>
-        <li>Large Language Models</li>
+        <li>Speech and Language Processing</li>
         <li>Optimization</li>
       </ul>
       <ul class="items w-55">

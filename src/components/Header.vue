@@ -92,8 +92,8 @@ export default {
       </router-link>
     </div>
     <div class="left-side">
-      <a href="mailto:alinourian10@gmail.com">
-        <h6 class="contact-me">Email Me!</h6>
+      <a @click="scrollToSection('contact')">
+        <h6 class="contact-me">Contact Me!</h6>
       </a>
     </div>
     <div class="menu-button" @click="toggleMenu">
@@ -108,7 +108,7 @@ export default {
         <li><a @click="scrollToSection('lectures'); toggleMenu();"><h6>Lectures</h6></a></li>
 <!--        <li><a @click="scrollToSection('projects'); toggleMenu();"><h6>Projects</h6></a></li>-->
         <li><router-link to="/CV" @click="toggleMenu"><h6>CV</h6></router-link></li>
-        <li><a href="mailto:alinourian10@gmail.com"><h6 class="contact-me">Email Me!</h6></a></li>
+        <li><a @click="scrollToSection('contact'); toggleMenu();"><h6 class="contact-me">Contact Me!</h6></a></li>
       </ul>
     </div>
   </div>
