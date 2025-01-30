@@ -1,17 +1,18 @@
 <script setup>
 
 import VideoCard from "@/components/ProjectInfo/VideoCard.vue";
+import VideoDriveCard from "@/components/ProjectInfo/DriveCard.vue";
 
 const recordedVideos = [
-  {title: 'Session 1', link: 'https://drive.google.com/file/d/10H76PfvaIOUXzQcQSflgDLksshwDqkPc/view?usp=drive_link'},
-  {title: 'Session 2', link: 'https://drive.google.com/file/d/1l_dEqYRFNOLFoCvIbKWIX76tXBFLW3Ky/view?usp=drive_link'},
-  {title: 'Session 3', link: 'https://drive.google.com/file/d/1AmGh-72IDSsBvkKYSOHnaoMkQVilkqia/view?usp=drive_link'},
-  {title: 'Session 4', link: 'https://drive.google.com/file/d/1qKX4oOukjsl7da58kR3CVVIgDDoZCz_A/view?usp=drive_link'},
-  {title: 'Session 5', link: 'https://drive.google.com/file/d/161DgqR4iMZeemKMJYDutl9z8LHdTXIu6/view?usp=drive_link'},
-  {title: 'Session 6', link: 'https://drive.google.com/file/d/1hZxJ0LstQQZ5qsSj6e-GIJ9qRcyCvXs4/view?usp=drive_link'},
-  {title: 'Session 7', link: 'https://drive.google.com/file/d/1RIUBe3V9L5uW78s7n1mhgjBYeo3VN1CB/view?usp=drive_link'},
-  {title: 'Session 8', link: 'https://drive.google.com/file/d/1T-Bc25xoXVce_uhikBb6rx6SVkpPPpMt/view?usp=drive_link'},
-  {title: 'Session 9', link: 'https://drive.google.com/file/d/1U9_-XAnXu2GM1erDwIVJ8pbca6bW33Wr/view?usp=drive_link'},
+  {title: 'Session 1', link: 'https://drive.google.com/file/d/10H76PfvaIOUXzQcQSflgDLksshwDqkPc/preview'},
+  {title: 'Session 2', link: 'https://drive.google.com/file/d/1l_dEqYRFNOLFoCvIbKWIX76tXBFLW3Ky/preview'},
+  {title: 'Session 3', link: 'https://drive.google.com/file/d/1AmGh-72IDSsBvkKYSOHnaoMkQVilkqia/preview'},
+  {title: 'Session 4', link: 'https://drive.google.com/file/d/1qKX4oOukjsl7da58kR3CVVIgDDoZCz_A/preview'},
+  {title: 'Session 5', link: 'https://drive.google.com/file/d/161DgqR4iMZeemKMJYDutl9z8LHdTXIu6/preview'},
+  {title: 'Session 6', link: 'https://drive.google.com/file/d/1hZxJ0LstQQZ5qsSj6e-GIJ9qRcyCvXs4/preview'},
+  {title: 'Session 7', link: 'https://drive.google.com/file/d/1RIUBe3V9L5uW78s7n1mhgjBYeo3VN1CB/preview'},
+  {title: 'Session 8', link: 'https://drive.google.com/file/d/1T-Bc25xoXVce_uhikBb6rx6SVkpPPpMt/preview'},
+  {title: 'Session 9', link: 'https://drive.google.com/file/d/1U9_-XAnXu2GM1erDwIVJ8pbca6bW33Wr/preview'},
 ];
 </script>
 
@@ -101,7 +102,11 @@ const recordedVideos = [
       <div class="section">
         <h4>Recorded Videos</h4>
         <div class="videos">
-          <VideoCard v-for="videoObj in recordedVideos"
+<!--          <VideoCard v-for="videoObj in recordedVideos"-->
+<!--              :title="videoObj.title"-->
+<!--              :link="videoObj.link"-->
+<!--          />-->
+          <VideoDriveCard v-for="videoObj in recordedVideos"
               :title="videoObj.title"
               :link="videoObj.link"
           />

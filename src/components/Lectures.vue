@@ -32,6 +32,7 @@ import Card from "@/components/Card.vue";
             affiliation="Sharif University of Technology"
             :dates="['Summer 2022', 'Summer 2023']"
             description="Eight-session course in both theoretical and practical Machine Learning."
+            page="MachineLearning"
         />
         <Card
             poster="/images/MATLAB-poster.png"
@@ -39,6 +40,7 @@ import Card from "@/components/Card.vue";
             affiliation="Sharif University of Technology"
             :dates="['Summer 2021']"
             description="Twelve-session course in MATLAB and its usage in Electrical Engineering and AI."
+            page="MATLAB"
         />
         <Card
             poster="/images/Java-poster2.png"
